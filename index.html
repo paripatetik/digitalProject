@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav class="header__nav menu">
+                  <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">Главная</a></li>
+                    <li><a href="products.html" class="menu__link">Галерея</a></li>
+                    <li><a href="about.html" class="menu__link">Проекты</a></li>
+                    <li><a href="products.html" class="menu__link">СЕРТИФИКАТЫ</a></li>
+                    <li><a href="about.html" class="menu__link">КОНТАКТЫ</a></li>
+                  </ul>
+                </nav>
+                <button class="header__btn btn-toggle"><span></span></button>
+              </div>
+        </header>
+        <main class="main">
+          <div class="main__container">
+            <div class="main__banner">
+              <div class="main__name">
+                <h1 class="main__name-title title">PROJECT <span>HOME</span></h1>
+                <div class="main__btns">
+                  <button class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9" fill="none"><path fill="#333" fill-rule="evenodd" d="M18 4.5a.5.5 0 0 0-.5-.5h-16a.5.5 0 0 0 0 1h16a.5.5 0 0 0 .5-.5Z" clip-rule="evenodd"/><path fill="#333" fill-rule="evenodd" d="M5.354.646a.5.5 0 0 0-.708 0L.793 4.5l3.853 3.854a.5.5 0 1 0 .708-.708L2.207 4.5l3.147-3.146a.5.5 0 0 0 0-.708Z" clip-rule="evenodd"/></svg>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="9" fill="none"><path fill="#333" fill-rule="evenodd" d="M.935 4.5a.5.5 0 0 1 .5-.5h16a.5.5 0 1 1 0 1h-16a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"/><path fill="#333" fill-rule="evenodd" d="M13.582.646a.5.5 0 0 1 .707 0L18.142 4.5 14.29 8.354a.5.5 0 1 1-.707-.708L16.728 4.5l-3.146-3.146a.5.5 0 0 1 0-.708Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
+                <div class="main__nums">
+                  <span>01</span>
+                  <span>/</span>
+                  <span>02</span>
+                </div>
+              </div>
+              <div class="main__img">
+                <img src="img/01.png" alt="#">
+                <button class="btn-content">ВЗГЛЯНУТЬ <i class="icon-arrow-r"></i></button>
+              </div>
+            </div>
+            <section class="main__about about">
+              <div class="about__imgs">
+                  <img src="img/02.png" alt="#">
+                  <img src="img/04.png" alt="#">
+              </div>
+              <img src="img/03.png" alt="#">
+              <div class="about__info">
+                <h2 class="about__title title">О компании</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button class="btn-content">ЧИТАТЬ <i class="icon-arrow-r"></i></button>
+              </div>
+            </section>
+            <section class="main__tasks tasks">
+              <h3 class="tasks__title title">
+                Основные задачи
+              </h3>
+              <div class="tasks__tasks">
+                <div class="tasks__task">
+                  <span>1</span> <p class="task__text">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+                </div>
+                <div class="tasks__task">
+                  <span>2</span> <p class="task__text">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+                </div>
+              </div>
+            </section>
+            <section class="main__projects projects">
+              <h3 class="projects__title title">
+                Основные задачи
+              </h3>
+              <div class="projects__images">
+                  <div class="project__image"><img src="img/05.png" alt="#"> 
+                    <div class="project__more">
+                      <h4 class="project__more-title title">ДОСУГОВЫЙ ЦЕНТР</h4>
+                      <button class="btn-content">ПОДРОБНЕЕ <i class="icon-arrow-r"></i></button>
+                    </div>
+                  </div>
+                  <div class="project__image"><img src="img/06.png" alt="#"></div>
+                  <div class="project__image"><img src="img/07.png" alt="#"></div>
+                  <div class="project__image"><img src="img/08.png" alt="#"></div>
+                  <div class="project__image"><img src="img/09.png" alt="#"></div>
+              </div>
+              <button class="projects__btn btn-content">
+                ВСЕ ПРОЕКТЫ <i class="icon-arrow-r"></i>
+              </button>
+            </section>
+            <section class="main__contacts contacts">
+              <h4 class="contacts__title title">Связаться с нами</h4>
+              <div class="contacts__body">
+                <form action="POST" id="form" class="contacts__form">
+                  <fieldset>
+                    <label for="name">
+                      <input id="name" class="required" type="text" required placeholder="Им'я">
+                    </label>
+                  </fieldset>
+                  <fieldset>
+                    <label for="tel" class="required">
+                      <input id="tel" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13"
+                      maxlength="13" type="tel"  placeholder="Номер телефона">
+                    </label>
+                  </fieldset>
+                  <fieldset><label for="email" class="required"><input id='email' type="email" required placeholder="E-mail"></label></fieldset>
+                  <fieldset><label for="product"><input id="product" type="text" placeholder="Интересующий товар/услуга"></label></fieldset>
+                  <fieldset>
+                    <label for="" class="required">
+                      <textarea placeholder="Сообщение" required></textarea>
+                    </label>
+                  </fieldset>
+                
+                  <label class="contacts__check" for="check">
+                    <input id="check" type="checkbox"><p>Отправляя заявку Вы соглашаетесьс политикой конфиденциальности</p>
+                </label>
+                <button type="submit" form="form" class="btn-content">ОТПРАВИТЬ <i class="icon-arrow-r"></i></button>
+                </form>
+                <div class="contacts__img">
+                  <img src="img/10.png" alt="#">
+                </div>
+              </div>
+             
+            </section>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145" height="94" fill="none"><path fill="url(#a)" d="M0 0h145v94H0z"/><defs><pattern id="a" width="1" height="1" patternContentUnits="objectBoundingBox"><use xlink:href="#b" transform="scale(.0069 .01064)"/></pattern><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAABeCAYAAAAjZvZCAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAATzaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTItMTJUMTU6Mzk6MjYrMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTEyLTEyVDE1OjQwOjE5KzA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTEyLTEyVDE1OjQwOjE5KzA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MDQ2YjUwOS00NGMxLWE4NGItYWNmYi1hY2YzNDJiMTE2YTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTA0NmI1MDktNDRjMS1hODRiLWFjZmItYWNmMzQyYjExNmEwIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OTA0NmI1MDktNDRjMS1hODRiLWFjZmItYWNmMzQyYjExNmEwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MDQ2YjUwOS00NGMxLWE4NGItYWNmYi1hY2YzNDJiMTE2YTAiIHN0RXZ0OndoZW49IjIwMTktMTItMTJUMTU6Mzk6MjYrMDY6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7mlQQGAAAIaUlEQVR4nO2de6wcVR3HP71UCIh1yyOgtbiUQkolsgTj6x/XxEdiFC8BMQgJF2L4gwS5RsJLoNdo/MOIvUUxvkJvUaHAH9xi+gcRdUmAQAjhQoQGCjIUtLkU6FLEqOCtf/zOZufOnHnsnJnZndnfJ5nM6zfn/Hbmu+c558yKgwcPUlEmgdNjzneBHYAX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" id="b" width="145" height="94"/></defs></svg>
+            </div>
+            <div class="footer__item item-footer">
+                <h6 class="item-footer__title">Информация</h6>
+                <nav class="item-footer__nav">
+                  <ul class="item-footer__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="footer__item item-footer">
+              <h6 class="item-footer__title">Контакты</h6>
+                <ul class="item-footer__list">
+                  <li><i class="icon-geo"></i> <p>100000, Республика  Казахстан, 
+                    г. Караганда, ул. Телевизионная 10</p></li>
+                  <li><i class="icon-tel"></i> <p>+38 (000) 000 00 00</p></li>
+                  <li><i class="icon-mail"></i> <p>mail@gmail.com</p></li>
+                </ul>
+          </div>
+          <div class="footer__item item-footer">
+            <h6 class="item-footer__title">Социальные сети</h6>
+              <ul class="item-footer__media">
+                <li><a href="#"><i class="icon-media-f"></i></a></li>
+                <li><a href="#"><i class="icon-media-twit"></i></a></li>
+                <li><a href="#"><i class="icon-media-li"></i></a></li>
+                <li><a href="#"><i class="icon-media-pin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p>© 2019 Digital Project. Все права защищены.</p>
+          </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
